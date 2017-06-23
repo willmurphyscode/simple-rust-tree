@@ -1,5 +1,5 @@
-use rand; 
+use rand;
 
 pub fn coin_flip() -> bool {
-  rand::random()
+    rand::random()
 }
