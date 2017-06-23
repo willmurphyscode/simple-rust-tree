@@ -21,7 +21,7 @@ impl Node {
       right = Some(Box::new(Node::random_tree()));
     }
 
-    Node { left_child: left, right_child: right, has_fruit: false }
+    Node { left_child: left, right_child: right, has_fruit: helpers::coin_flip() }
   }
 }
 
