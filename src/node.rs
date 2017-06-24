@@ -34,7 +34,7 @@ impl fmt::Display for Node {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         let has_left = self.left_child.is_some();
         let has_right = self.right_child.is_some();
-        writeln!(
+        write!(
             f,
             "Node: has left: {}, right: {}, fruit: {}",
             has_left,
